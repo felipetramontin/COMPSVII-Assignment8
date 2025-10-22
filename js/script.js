@@ -19,3 +19,8 @@ questionBlocks.forEach((block, index) => {
     });
   });
 });
+
+const showResultButton = document.getElementById('show-result');
+showResultButton.addEventListener('click', () => {
+        console.log('Final Answers:', userAnswers);
+});
