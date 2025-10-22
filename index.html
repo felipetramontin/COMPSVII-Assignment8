@@ -1,57 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Personality Quiz</title>
-    <link rel="icon" type="image/x-icon" href="/img/ideas.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href ="./css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Personality Quiz</title>
+  <link rel="icon" type="image/x-icon" href="/img/ideas.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
-    
-    <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center" id="question-1">
-      <div class="card my-4 p-4 question-block" style="width: 75%;">
-        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-        <div class="row g-2">
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-          </div>
-          <div class="col-6">
-            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-          </div>
+  <h1 class="text-center mt-4">Personality Test</h1>
+
+  <!-- Start quiz element -->
+  <div class="container d-flex justify-content-center" id="question-1">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h4 class="mb-3">When your friend is upset, you usually:</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Crack a joke to cheer them
+            up.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Listen quietly and give
+            advice.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Plan something fun to distract
+            them.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Give them space until they’re ready
+            to talk.</button>
         </div>
       </div>
     </div>
+  </div>
 
-    
-    
-    <!-- End quiz element -->
-
-    <!-- Add more quiz elements here -->
-
-
-
-    <div class="container d-flex justify-content-center">
-      <button id="show-result" class="btn btn-success my-4">Show Results</button>
-    </div>    
-    <!-- Output the result here -->
-    <div class="container d-flex justify-content-center">
-      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
-        <h3>Your Result:</h3>
-        <p id="result-text"></p>
+  <div class="container d-flex justify-content-center" id="question-2">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h4 class="mb-3">At a party, you’re most likely:</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Talking to everyone, even people you
+            just met.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Hanging out with your closest
+            friends.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Helping the host make sure everyone’s
+            having a good time.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Sitting in a quiet corner, observing
+            and enjoying.</button>
+        </div>
       </div>
     </div>
-    
-    <!-- Connect to your script file here -->
-    <script src="./js/script.js"></script>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-3">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h4 class="mb-3">Your friends describe you as:</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Funny and energetic.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Loyal and dependable.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Outgoing and caring.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Calm and thoughtful.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-4">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h4 class="mb-3">When you make plans, you prefer:</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Spontaneous adventures.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Structured activities with a clear
+            plan.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">A mix of both, depends on the
+            mood.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Staying in and relaxing.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex justify-content-center" id="question-5">
+    <div class="card my-4 p-4 question-block" style="width: 75%;">
+      <h4 class="mb-3">Your ideal weekend involves:</h4>
+      <div class="row g-2">
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">Going out with a big group.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">Movie night with a few
+            friends.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">Volunteering or doing something
+            meaningful.</button>
+        </div>
+        <div class="col-6">
+          <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">Solo time to recharge.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container d-flex justify-content-center">
+    <button id="show-result" class="btn btn-success my-4">Show Results</button>
+  </div>
+  <!-- Output the result here -->
+  <div class="container d-flex justify-content-center">
+    <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+      <h3>Your Result:</h3>
+      <p id="result-text"></p>
+    </div>
+  </div>
+
+  <!-- Connect to your script file here -->
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
