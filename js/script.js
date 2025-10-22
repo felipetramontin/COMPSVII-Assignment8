@@ -1,5 +1,4 @@
 const questionBlocks = document.querySelectorAll('.question-block');
-console.log(questionBlocks);
 
 const userAnswers = {};
 
@@ -13,16 +12,8 @@ questionBlocks.forEach((block, index) => {
                         btn.classList.add('selected');
 
                         userAnswers[index + 1] = btn.dataset.answer;
-
-                        console.log(`Question ${index + 1}: ${btn.dataset.answer}`);
-                        console.log(userAnswers);
                 });
         });
-});
-
-const showResultButton = document.getElementById('show-result');
-showResultButton.addEventListener('click', () => {
-        console.log('Final Answers:', userAnswers);
 });
 
 document.getElementById('show-result').addEventListener('click', displayResult);
